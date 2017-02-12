@@ -4,9 +4,42 @@
 import angular from 'angular';
 
 export class NavbarComponent {
-  menu = [{
-    title: 'Home',
-    state: 'main'
+  menu = [
+  //   {
+  //   title: 'Home',
+  //   state: 'main'
+  // },
+  {
+    title: 'Questions',
+    state: 'questions'
+  },
+  {
+    title: 'Temporary Accomodation',
+    state: 'tempAccomodation'
+  },
+  {
+    title: 'Mentor Program',
+    state: 'mentorProgram'
+  },
+  {
+    title: 'Events',
+    state: 'events'
+  },
+  {
+    title: 'Membership',
+    state: 'membership'
+  },
+  {
+    title: 'Donate',
+    state: 'donate'
+  },
+  {
+    title: 'People',
+    state: 'people'
+  },
+  {
+    title: 'About',
+    state: 'about'
   }];
 
   isCollapsed = true;
