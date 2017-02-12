@@ -1,28 +1,25 @@
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
-  </div>
-</header>
+<div class="about-wrapper container">
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
+    <div class="about-header"> Association of Indian Students at University of Southern California </div>
+    <hr/>
+
+    <p class="about-content">
+
+        You bring with you everything that makes India so uniquely Indian: the rich culture, the poetic art, the aromatic food, and the engaging people. You bring with you the power of meditation, the Yoga and the Ayurveda, the Taj Mahal and the Gateway of India, Bollywood films and the Bachchans, the Ambassadors and Auto-Rickshaws, the IPL and the Tendulkar, the Akbar and the Birbal, the Sitar and the Tabla. You bring with you Raaga, Nritya, Natya, the politics, the weddings, one thousand dialects, 300 different ways of cooking the potato, and yet you bring with you the power of a single identity.
+        <br/>
+        <br/> We at Association of Indian Students indulge in everything Indian you bring, and locate amidst our diversities what we all have in common. We dance away to desi beats, splash colors on our faces, gulp those gol gappas off a saucer, sing the national anthem, and watch with bated breath as Dhoni smashes that last ball into the stands. And until the summons from home becomes too loud to ignore, we keep you connected to your roots.
+        <br/>
+        <br/> Come, let us recapture that thrill that runs through each of us when we think of home.
+        <br/> Welcome to the Association of Indian Students at the University of Southern California.
+        <br/>
+        <br/> To know more, send us an email at <a href="mailto:india@aisusc.org">india@aisusc.org</a>.
+
+    </p>
+    <div class="about-document-container">
+      <ul>
+          <li> <a href="/static/The Constitution for Association of Indian Students.pdf"> Our Constitution </a> </li>
+          <li> <a href="/static/Bylaws for Association of Indian Students.pdf"> Bylaws </a> </li>
       </ul>
     </div>
-  </div>
 
-  <form class="thing-form">
-    <label>Syncs in realtime across clients</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
 </div>

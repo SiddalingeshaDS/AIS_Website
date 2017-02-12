@@ -32,6 +32,9 @@ import donate from './donate/donate.component';
 import people from './people/people.component';
 import about from './about/about.component';
 
+import portrait from './portrait/portrait.directive';
+import portraitBanner from './portrait-banner/portrait-banner.directive';
+
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
@@ -39,7 +42,7 @@ import socket from '../components/socket/socket.service';
 import './app.scss';
 
 angular.module('aisApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, navbar, footer, main, questions, tempAccomodation, mentorProgram, events, membership, donate, people, about, constants, socket, util
+  uiBootstrap, _Auth, account, admin, navbar, footer, portrait, portraitBanner, main, questions, tempAccomodation, mentorProgram, events, membership, donate, people, about, constants, socket, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

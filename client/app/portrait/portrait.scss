@@ -1,0 +1,14 @@
+.portrait-wrapper{
+  height: 200px;
+  .portrait-pic-container{
+    height: 106px;
+    width: 106px;
+    border: 1px solid #efefef;
+    padding: 2px;
+    margin: auto;
+    .portrait-pic {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
