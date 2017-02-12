@@ -1,4 +1,6 @@
-# ais-v1
+# Association of Indian Students - University of Southern California, Los Angeles
+
+This is an upgraded version of the AIS website created using MEAN stack.
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.1.3.
 
