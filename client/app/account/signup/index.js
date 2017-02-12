@@ -3,6 +3,6 @@
 import angular from 'angular';
 import SignupController from './signup.controller';
 
-export default angular.module('aisV1App.signup', [])
+export default angular.module('aisApp.signup', [])
   .controller('SignupController', SignupController)
   .name;

@@ -73,6 +73,6 @@ export function Modal($rootScope, $uibModal) {
   };
 }
 
-export default angular.module('aisV1App.Modal', [])
+export default angular.module('aisApp.Modal', [])
   .factory('Modal', Modal)
   .name;

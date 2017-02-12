@@ -38,7 +38,7 @@ export class MainController {
   }
 }
 
-export default angular.module('aisV1App.main', [uiRouter])
+export default angular.module('aisApp.main', [uiRouter])
   .config(routing)
   .component('main', {
     template: require('./main.html'),

@@ -3,6 +3,6 @@
 import angular from 'angular';
 import LoginController from './login.controller';
 
-export default angular.module('aisV1App.login', [])
+export default angular.module('aisApp.login', [])
   .controller('LoginController', LoginController)
   .name;

@@ -80,6 +80,6 @@ function Socket(socketFactory) {
   };
 }
 
-export default angular.module('aisV1App.socket', [])
+export default angular.module('aisApp.socket', [])
   .factory('socket', Socket)
   .name;

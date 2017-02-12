@@ -29,7 +29,7 @@ import socket from '../components/socket/socket.service';
 
 import './app.scss';
 
-angular.module('aisV1App', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
+angular.module('aisApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util
 ])
   .config(routeConfig)
@@ -48,7 +48,7 @@ angular.module('aisV1App', [ngCookies, ngResource, ngSanitize, 'btford.socket-io
 
 angular.element(document)
   .ready(() => {
-    angular.bootstrap(document, ['aisV1App'], {
+    angular.bootstrap(document, ['aisApp'], {
       strictDi: true
     });
   });

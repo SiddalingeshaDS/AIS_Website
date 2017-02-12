@@ -5,6 +5,6 @@ import {
   UtilService
 } from './util.service';
 
-export default angular.module('aisV1App.util', [])
+export default angular.module('aisApp.util', [])
   .factory('Util', UtilService)
   .name;
