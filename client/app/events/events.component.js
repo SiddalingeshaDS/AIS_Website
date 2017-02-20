@@ -3,39 +3,34 @@ import uiRouter from 'angular-ui-router';
 import routing from './events.routes';
 
 export class EventsController {
-  awesomeThings = [];
-  newThing = '';
-
-  /*@ngInject*/
-  constructor($http, $scope, socket) {
-    this.$http = $http;
-    this.socket = socket;
-
-    $scope.$on('$destroy', function() {
-      socket.unsyncUpdates('thing');
-    });
-  }
-
-  $onInit() {
-    this.$http.get('/api/things')
-      .then(response => {
-        this.awesomeThings = response.data;
-        this.socket.syncUpdates('thing', this.awesomeThings);
-      });
-  }
-
-  addThing() {
-    if(this.newThing) {
-      this.$http.post('/api/things', {
-        name: this.newThing
-      });
-      this.newThing = '';
-    }
-  }
-
-  deleteThing(thing) {
-    this.$http.delete(`/api/things/${thing._id}`);
-  }
+  events = [{
+    "name": "Republic Day",
+    "eventDate": "January 26, 2017"
+  },
+  {
+    "name": "Orientation for Spring 2017",
+    "eventDate": "January 7, 2017"
+  },
+  {
+    "name": "Diwali",
+    "eventDate": "October 30, 2016"
+  },
+  {
+    "name": "Resume/Career Workshop",
+    "eventDate": "October 8, 2016"
+  },
+  {
+    "name": "Garba",
+    "eventDate": "October 2, 2016"
+  },
+  {
+    "name": "Social Mixer",
+    "eventDate": "September 3, 2016"
+  },
+  {
+    "name": "Independence Day",
+    "eventDate": "August 15, 2016"
+  }];
 }
 
 export default angular.module('aisApp.events', [uiRouter])
