@@ -1,28 +1,18 @@
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
-  </div>
-</header>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <form class="thing-form">
-    <label>Syncs in realtime across clients</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
+<div class="question-wrapper container">
+  <div class="question-tab-list">
+    <ul id="question-tabs" class="nav nav-tabs">
+     <li class=""><a href="#Courses" data-toggle="tab">Courses</a></li>
+     <li class=""><a href="#Finance" data-toggle="tab">Finance</a></li>
+     <li class=""><a href="#Housing" data-toggle="tab">Housing</a></li>
+     <li class=""><a href="#Jobs" data-toggle="tab">Jobs</a></li>
+     <li class=""><a href="#Lifestyle" data-toggle="tab">Lifestyle</a></li>
+     <li class=""><a href="#Travel" data-toggle="tab">Travel</a></li>
+     <li class=""><a href="#Miscellaneous" data-toggle="tab">Miscellaneous</a></li>
+     <li class=""><a href="#Specific" data-toggle="tab">Specific</a></li>
+     <li class=""><a href="#Documents" data-toggle="tab">Documents</a></li>
+   </ul>
+ </div>
+    <div class="question-content">
+      <question-tab questions="tab.questions" tabId="{{tab.tabId}}" ng-repeat="tab in $ctrl.tabs"/>
+   </div>
 </div>
