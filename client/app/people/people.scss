@@ -1,20 +1,13 @@
-.people-wrapper {
-  .people-header {
-
-  }
-  .people-content {
-    .people-block {
-      height: 180px;
-      .people-pic-container {
-        height: 104px;
-        border: 1px solid #efefef;
-        padding: 2px;
-        width: 104px;
-        img {
-          height: 100px;
-          width: 100px;
-        }
-      }
-    }
-  }
+.people-block {
+  height: 180px;
+}
+.people-pic-container {
+  height: 104px;
+  border: 1px solid #efefef;
+  padding: 2px;
+  width: 104px;
+}
+.people-pic-container img {
+  height: 100px;
+  width: 100px;
 }
