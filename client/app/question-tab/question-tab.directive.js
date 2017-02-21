@@ -8,7 +8,7 @@ export default angular.module('aisApp.question-tab', [])
       restrict: 'E',
       scope: {
         questions: '=',
-        tabId: "="
+        tabid: "="
       },
       link: function(scope, element, attrs) {}
     };

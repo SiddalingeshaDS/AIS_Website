@@ -4,7 +4,7 @@ export default function routes($stateProvider) {
   'ngInject';
 
   $stateProvider.state('people', {
-    url: '/',
+    url: '/people',
     template: '<people></people>'
   });
 }

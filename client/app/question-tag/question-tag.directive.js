@@ -1,10 +1,10 @@
 'use strict';
 const angular = require('angular');
 
-export default angular.module('aisApp.question', [])
-  .directive('question', function() {
+export default angular.module('aisApp.question-tag', [])
+  .directive('questionTag', function() {
     return {
-      template: require('./question.html'),
+      template: require('./question-tag.html'),
       restrict: 'E',
       scope: {
         question: '@',

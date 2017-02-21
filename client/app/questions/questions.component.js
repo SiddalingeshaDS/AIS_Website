@@ -4,7 +4,7 @@ import routing from './questions.routes';
 
 export class QuestionsController {
   tabs = [{
-      "tabId":"Courses",
+      "tabid":"Courses",
       "tabName": "Courses",
       "questions":[{
         "question": "What course combinations to take for the first sem?",
@@ -38,7 +38,7 @@ export class QuestionsController {
       }]
     },
     {
-        "tabId":"Finance",
+        "tabid":"Finance",
         "tabName": "Finance",
         "questions":[{
           "question": "How can I pay my fees?",
@@ -53,7 +53,7 @@ export class QuestionsController {
       ]
     },
     {
-        "tabId":"Housing",
+        "tabid":"Housing",
         "tabName": "Housing",
         "questions":[{
           "question": "Can AIS help me find permanent accommodation and/or roommates?",
@@ -93,7 +93,7 @@ export class QuestionsController {
       ]
     },
     {
-        "tabId":"Jobs",
+        "tabid":"Jobs",
         "tabName": "Jobs",
         "questions":[{
             "question": "How do I apply for on campus jobs?",
@@ -138,7 +138,7 @@ export class QuestionsController {
       ]
     },
     {
-        "tabId":"Lifestyle",
+        "tabid":"Lifestyle",
         "tabName": "Lifestyle",
         "questions":[{
           "question": "What are the average monthly expenses, excluding rent? Assuming you eat out 2 days a week or so, and are going to cook",
@@ -182,7 +182,7 @@ export class QuestionsController {
         }]
     },
     {
-        "tabId":"Travel",
+        "tabid":"Travel",
         "tabName": "Travel",
         "questions":[{
           "question": "What is a good time to arrive at USC?",
@@ -202,7 +202,7 @@ export class QuestionsController {
       ]
     },
     {
-        "tabId":"Miscellaneous",
+        "tabid":"Miscellaneous",
         "tabName": "Miscellaneous",
         "questions":[{
           "question": "What immunizations do I have to get done?",
@@ -246,7 +246,7 @@ export class QuestionsController {
         }]
     },
     {
-        "tabId":"Specific",
+        "tabid":"Specific",
         "tabName": "Specific",
         "questions":[{
           "question": "",
@@ -256,7 +256,7 @@ export class QuestionsController {
       ]
     },
     {
-        "tabId":"Documents",
+        "tabid":"Documents",
         "tabName": "Documents",
         "questions":[{
           "question": "Helpsheet for New International Students",

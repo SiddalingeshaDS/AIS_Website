@@ -11,8 +11,10 @@
      <li class=""><a href="#Specific" data-toggle="tab">Specific</a></li>
      <li class=""><a href="#Documents" data-toggle="tab">Documents</a></li>
    </ul>
- </div>
-    <div class="question-content">
-      <question-tab questions="tab.questions" tabId="{{tab.tabId}}" ng-repeat="tab in $ctrl.tabs"/>
-   </div>
+  </div>
+  <div class="question-content tab-content">
+    <div id="{{tab.tabid}}" class="tab-pane" ng-repeat="tab in $ctrl.tabs">
+      <question-tab questions="tab.questions" tabid="tab.tabid" />
+    </div>
+  </div>
 </div>

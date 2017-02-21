@@ -1,9 +1,9 @@
 'use strict';
 
-describe('Directive: question', function() {
+describe('Directive: questionTag', function() {
   // load the directive's module and view
-  beforeEach(module('aisApp.question'));
-  beforeEach(module('app/question/question.html'));
+  beforeEach(module('aisApp.question-tag'));
+  beforeEach(module('app/question-tag/question-tag.html'));
 
   var element, scope;
 
@@ -12,9 +12,9 @@ describe('Directive: question', function() {
   }));
 
   it('should make hidden element visible', inject(function($compile) {
-    element = angular.element('<question></question>');
+    element = angular.element('<question-tag></question-tag>');
     element = $compile(element)(scope);
     scope.$apply();
-    expect(element.text()).to.equal('this is the question directive');
+    expect(element.text()).to.equal('this is the questionTag directive');
   }));
 });

@@ -4,7 +4,7 @@ export default function routes($stateProvider) {
   'ngInject';
 
   $stateProvider.state('donate', {
-    url: '/',
+    url: '/donate',
     template: '<donate></donate>'
   });
 }
